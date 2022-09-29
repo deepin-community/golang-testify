@@ -1,0 +1,42 @@
+Source: golang-testify
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Jelmer Vernooĳ <jelmer@debian.org>,
+           Anthony Fok <foka@debian.org>,
+           Martina Ferrari <tina@debian.org>
+Section: golang
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-davecgh-go-spew-dev (>= 1.1.0),
+               golang-github-pmezard-go-difflib-dev (>= 1.0.0),
+               golang-github-stretchr-objx-dev (>= 0.1.0),
+               golang-gopkg-yaml.v3-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-testify
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-testify.git
+Homepage: https://github.com/stretchr/testify
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/stretchr/testify
+
+Package: golang-github-stretchr-testify-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: golang-github-davecgh-go-spew-dev (>= 1.1.0),
+         golang-github-pmezard-go-difflib-dev (>= 1.0.0),
+         golang-github-stretchr-objx-dev (>= 0.1.0),
+         golang-gopkg-yaml.v3-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: sacred extension to the standard Go testing package
+ Testify is a Go code (golang) set of packages that provide many tools for
+ testifying that code behaves as intended.
+ .
+ Features include:
+  * Easy assertions
+  * Mocking
+  * HTTP response trapping
+  * Testing suite interfaces and functions
+ .
+ This package contains the source.
