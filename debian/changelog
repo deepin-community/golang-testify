@@ -1,3 +1,56 @@
+golang-testify (1.8.4-1) unstable; urgency=medium
+
+  * New upstream version 1.8.4
+
+ -- Anthony Fok <foka@debian.org>  Mon, 09 Oct 2023 16:39:21 -0600
+
+golang-testify (1.8.3-1) unstable; urgency=medium
+
+  * New upstream version 1.8.3
+  * Bump build-dependency golang-any (>= 2:1.20~) as per go.mod
+
+ -- Anthony Fok <foka@debian.org>  Thu, 21 Sep 2023 02:32:31 -0600
+
+golang-testify (1.8.1-1) unstable; urgency=medium
+
+  * New upstream version 1.8.1
+  * Bump dependency: golang-github-stretchr-objx-dev (>= 0.5.0)
+  * Bump Standards-Version to 4.6.2 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Mon, 23 Jan 2023 07:34:00 -0700
+
+golang-testify (1.8.0-1) unstable; urgency=medium
+
+  * New upstream version 1.8.0
+
+ -- Anthony Fok <foka@debian.org>  Mon, 29 Aug 2022 17:36:38 -0600
+
+golang-testify (1.7.5-1) unstable; urgency=medium
+
+  * New upstream version 1.7.5
+  * Update versioned dependencies as per go.mod
+  * Drop unneeded dependency on ${shlibs:Depends}
+  * Update debian/copyright as per LICENSE file
+
+ -- Anthony Fok <foka@debian.org>  Wed, 13 Jul 2022 02:40:06 -0600
+
+golang-testify (1.7.2-1) unstable; urgency=medium
+
+  * New upstream version 1.7.2
+  * Update versioned dependency: golang-gopkg-yaml.v3-dev (>= 3.0.1)
+  * Bump Standards-Version to 4.6.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Tue, 14 Jun 2022 03:51:28 -0600
+
+golang-testify (1.7.1-1) unstable; urgency=medium
+
+  * New upstream version 1.7.1
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Reorder fields in debian/control and debian/copyright
+    as would be generated in the next dh-make-golang release after 0.6.0-1
+
+ -- Anthony Fok <foka@debian.org>  Fri, 03 Jun 2022 23:12:28 -0600
+
 golang-testify (1.7.0+git20210824.ab6dc32-1) unstable; urgency=medium
 
   * New upstream version 1.7.0+git20210824.ab6dc32
